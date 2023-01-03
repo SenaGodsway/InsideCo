@@ -1,0 +1,97 @@
+#navigation{
+    /* background: #f1f1f1;   */
+    padding: 10px;
+    height: 10vh;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    /* margin-top: 10px; */
+    width: 100%;
+    z-index: 9000000;
+}
+#navigation .brand-logo{
+font-family: logoFont;
+font-size: 2.5em;
+/* color: #ff4500; */
+margin-left: 100px;
+padding: 15px 0;
+font-weight: bold;
+/* background-color: blue; */
+box-sizing: border-box;
+position: absolute;
+top: 0;
+bottom: 0;
+z-index: 900000;
+}
+#navigation #cart{
+  z-index: 10000;
+  /* color: #ff4500; */
+  color: #fff;
+  font-size: 1.8em;
+  position: absolute;
+  right: 80px;
+  top: 25px;
+  display: none;
+}
+#navigation #bars{
+  z-index: 10000;
+  /* color: #ff4500; */
+  color: #fff;
+  font-size: 1.8em;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  display: none;
+}
+#navigation .menu {
+    right: 100px;
+    top: 0px;
+    bottom: 0;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+    /* z-index: 90000 !important; */
+    display: flex;
+}
+#navigation .menu li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+#navigation .menu li a{
+    color:#fff;
+    font-family: headings;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* display: inline-block; */
+}
+
+@media screen and (max-width:768px) {
+  #navigation{
+    /* background: #eee; */
+  }
+  #navigation .brand-logo{
+    margin-left: 20px;
+    color: #fff;
+  }
+  #navigation #cart{
+    display: block;
+  }
+  #navigation #bars{
+    display: block;
+  }
+  #navigation .menu {
+    background: #333;
+    height: 100vh;
+    margin-left:40px;
+    width: 100%;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+  #navigation .menu li{
+    margin-top: 10px;
+
+  }
+}
